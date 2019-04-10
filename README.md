@@ -4,22 +4,22 @@ DodgeBoom is a game of 2-8 burned players with intense sands that break. Avoid f
 
 ## Controls
 
-*       Movement
-*       Dash
-*       Steal ball
-*       Defend
-*       Attack
+*   Movement
+*   Dash
+*   Steal ball
+*   Defend
+*   Attack
 
 
 ## References
 
-1.      Stikbold! A Dodgeball Adventure (PC, PS4, Xbox One, Switch)
-2.      Robot Roller-Derby Disco Dodgeball (PC, PS4, Xbox One, Switch)
-3.      Mario Sports Mix – Dodgeball (Wii)
-4.      Super Dodge Ball (NEO GEO)
-5.      Super Dodge Ball Advance (Game Boy Advance)
-6.      Super Dodge Ball (NES)
-7.      Super Dodgeball Brawlers (Nintendo DS)
+1.  Stikbold! A Dodgeball Adventure (PC, PS4, Xbox One, Switch)
+2.  Robot Roller-Derby Disco Dodgeball (PC, PS4, Xbox One, Switch)
+3.  Mario Sports Mix – Dodgeball (Wii)
+4.  Super Dodge Ball (NEO GEO)
+5.  Super Dodge Ball Advance (Game Boy Advance)
+6.  Super Dodge Ball (NES)
+7.  Super Dodgeball Brawlers (Nintendo DS)
 
 ## Licença
 
