@@ -1,48 +1,26 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-[RequireComponent(typeof(CharacterMovement))]
-[RequireComponent(typeof(CharacterShooter))]
+[RequireComponent(typeof(PlayerMovement))]
 public class PlayerController : MonoBehaviour
 {
-    [Header("Joystick Number")]
-    [Range(0, 4)]
-    public int m_PlayerId;
+    [SerializeField]
+    private float m_Speed = 2.0f;
 
-    [Header("Shooter")]
-    public GameObject m_BallPrefab;
+    private PlayerMovement m_MovementScript;
 
-    public float m_Force;
-
-    private CharacterShooter m_ShooterScript;
-
-    private CharacterMovement m_MovementScript;
-
-    private float m_HorizontalMove;
-    private float m_VerticalMove;
-
-    private float m_HorizontalTurn;
-    private float m_VerticalTurn;
-
-    private bool m_CanShoot;
-
-    private void Awake()
+    public void Awake()
     {
-        m_ShooterScript = GetComponent<CharacterShooter>();
-        m_MovementScript = GetComponent<CharacterMovement>();
+        m_MovementScript = GetComponent<PlayerMovement>();
     }
 
-    private void Update()
+    public void Update()
     {
-        m_HorizontalMove = Input.GetAxis("Horizontal");
-        m_VerticalMove = Input.GetAxis("Vertical");
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
-        if (m_CanShoot)
-        {
-            m_CanShoot = false;
-            m_ShooterScript.Shooter(m_BallPrefab, m_Force);
-        }
-
-        m_MovementScript.Move(m_HorizontalMove, m_VerticalMove);
-        m_MovementScript.Turning(m_HorizontalMove, m_VerticalMove);
+        m_MovementScript.Move(horizontal, vertical, m_Speed);
+        m_MovementScript.Turning(horizontal, vertical);
     }
 }

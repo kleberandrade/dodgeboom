@@ -1,0 +1,50 @@
+﻿t:Producers
+Kleber de Oliveira Andrade
+
+t:Designers
+Hadston Alexandre de Menezes Nunes
+Victória Andressa Faria
+
+t:Lead Programmer
+Kleber de Oliveira Andrade
+
+t:Programmers
+Kleber de Oliveira Andrade
+Igor Eugenio Favero
+Vinicius Garcia Torres
+
+t:Lead Artist
+Ricardo Moura Cunha
+
+t:2D Artists
+Lara dos Santos
+Maria Carolina Damiani Paiser
+Matheus Augusto Rotta de Carvalho
+José William Pinto Gomes
+
+t:3D Artists
+Ricardo Moura Cunha
+José William Pinto Gomes
+
+t:UX Designer
+Isabella Cancian
+Maria Carolina Damiani Paiser
+
+t:Music
+Wladimir Roberto Barbosa
+Gustavo Carvalho Gomes de Abreu
+
+t:Sound Effects (SFX)
+Wladimir Roberto Barbosa
+
+t:Visual Effects (VFX)
+Kleber de Oliveira Andrade
+
+t:Testers
+Alexandro José Candido
+Vitoria Ribeiro Ortega
+
+t:Special Thanks
+Gustavo Carvalho Gomes de Abreu
+Curso de Jogos Digitais
+Faculdade de Tecnologia de Americana
