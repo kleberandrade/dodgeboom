@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 
-public class Shooter : MonoBehaviour
+public class PlayerShooting : MonoBehaviour
 {
     [SerializeField]
-    private Rigidbody m_BulletPrefab;
+    private Transform m_Hand;
 
-    [SerializeField]
-    private Transform m_BulletSpawn;
+    private Rigidbody m_Ball;
 
     [SerializeField]
     private float m_MinForce = 10.0f;
@@ -16,6 +15,8 @@ public class Shooter : MonoBehaviour
 
     [SerializeField]
     private float m_TimeToMaxForce = 2.0f;
+
+    public bool CanShoot => m_Hand.childCount > 0;
 
     private float m_ElapsedTime;
 
@@ -32,8 +33,29 @@ public class Shooter : MonoBehaviour
         if (Input.GetButtonUp("Fire1"))
         {
             m_ElapsedTime = 0.0f;
-            Rigidbody arrow = Instantiate<Rigidbody>(m_BulletPrefab, m_BulletSpawn.position, m_BulletSpawn.rotation);
-            arrow.AddForce(m_BulletSpawn.forward * m_CurrentForce, ForceMode.Impulse);
+            m_Hand.DetachChildren();
+            m_Ball.AddForce(m_Hand.forward * m_CurrentForce, ForceMode.Impulse);
+        }
+    }
+
+    public void Pickup()
+    {
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ball"))
+        {
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Ball"))
+        {
+
         }
     }
 }

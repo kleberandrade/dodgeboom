@@ -1,13 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float m_Speed = 2.0f;
-
     private PlayerMovement m_MovementScript;
 
     public void Awake()
@@ -17,10 +12,9 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        m_MovementScript.Move(horizontal, vertical, m_Speed);
-        m_MovementScript.Turning(horizontal, vertical);
+        m_MovementScript.Horizontal = Input.GetAxis("Horizontal");
+        m_MovementScript.Vertical = Input.GetAxis("Vertical");
+        m_MovementScript.Jump = Input.GetButtonDown("Fire1");
+        m_MovementScript.Dash = Input.GetButtonDown("Fire2");
     }
 }
